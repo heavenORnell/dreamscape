@@ -61,9 +61,9 @@
             }
           };
         },
-        
-        calculatedistance(pointA, pointB){
-  const distanceX = Math.abs(pointB.x - pointA.x),
+
+        calculateDistance(pointA, pointB){
+  const distanceX = Math.abs(pointB.x - pointA.x);
   const distanceY = Math.abs(pointB.y - pointA.y);
 
 // Apply the Pythagorean Theorem //
