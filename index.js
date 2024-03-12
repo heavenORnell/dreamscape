@@ -61,6 +61,17 @@
             }
           };
         },
+        
+        calculatedistance(pointA, pointB){
+  const distanceX = Math.abs(pointB.x - pointA.x),
+  const distanceY = Math.abs(pointB.y - pointA.y);
+
+// Apply the Pythagorean Theorem //
+  const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+
+// The distance between points A and B //
+          return distance;
+        }
       },
     };
   }(window, window._));
