@@ -3,7 +3,12 @@
 (function (window, _) {
   window.dreamscape = window.dreamscape || {
     numz: {
-      /* other code */
+      degToRad(deg){
+        return deg * Math.PI / 180;
+      },
+      radToDeg(rad){
+        return rad * 180 / Math.PI;
+      },
     },
     phyz: {
       /**
@@ -81,6 +86,13 @@
 
         // The distance between points A and B //
         return distance;
+      },
+      calculateAngleDeg(pointA, pointB){
+        const distanceY = pointB.y - pointA.y;
+        const distanceX = pointB.x - pointA.x;
+        const radians = Math.atan2(distanceY, distanceX);
+        const degrees = radians * 180 / Math.PI;
+        return degrees;
       },
     },
   };
