@@ -10,6 +10,15 @@ To release your library to `bower` initially:
 
 <hr>
 
+### Import a library using bower
+
+cd video-game-course/<project-name>
+npm install -g bower
+bower install --save <gaming-library-repo-link>
+cd ../..
+
+<hr>
+
 ### Updating 
 
 To re-release your library to `bower`:
