@@ -14,7 +14,7 @@ To release your library to `bower` initially:
 
 cd video-game-course/<project-name>
 npm install -g bower
-bower install --save <gaming-library-repo-link>
+bower install --save https://github.com/heavenORnell/dreamscape.git
 cd ../..
 
 <hr>
